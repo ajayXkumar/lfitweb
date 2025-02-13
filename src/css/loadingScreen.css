@@ -1,0 +1,50 @@
+/* Full-screen loading screen */
+.main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideRight 15s forwards; /* Background transition animation */
+    overflow: hidden;
+}
+
+/* LFIT text dynamically inverts color */
+.loading-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;  /* Ensure text is visible initially */
+    transition: color 8s; /* Smooth color transition */
+}
+
+/* Left-to-right background animation */
+@keyframes slideRight {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+/* Change text color when background turns white */
+@keyframes textColorChange {
+    0% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+/* Apply text color change with delay */
+.loading-text {
+    animation: textColorChange 8s forwards;
+}
