@@ -218,7 +218,7 @@ const HomePage = () => {
         }}
       ></div>
       <div style={{ height: "600px" }}></div>
-  
+  <SplashCursor/>
       {/* <div className="banner">
         <div className="slider" style={{ "--quantity": 10 }}>
           <div className="item" style={{ "--position": 1 }}>

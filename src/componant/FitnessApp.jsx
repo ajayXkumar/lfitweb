@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
+import SplashCursor from "./SplashCursor";
 const FitnessApp = () => {
   return (
     <div
@@ -87,6 +88,7 @@ const FitnessApp = () => {
       <div style={{ width: "100vw", marginBottom: 200 }}>
         <Slider />
       </div>
+      <SplashCursor/>
     </div>
   );
 };
