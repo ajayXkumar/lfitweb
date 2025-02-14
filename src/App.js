@@ -4,12 +4,14 @@ import HomePage from "./componant/HomePage";
 // Import the FitnessApp component
 import LoadingScreen from "./componant/loadingScreen";
 import FitnessApp from './componant/FitnessApp'
+import SplashCursor from "./componant/SplashCursor";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   return (
     <Router>
+  
       <div className="App">
         {loading ? (
           <LoadingScreen onFinish={() => setLoading(false)} />

@@ -33,6 +33,16 @@
 
 }
 
+@media (max-width: 768px){
+  .image-style {
+    width: 30vw;
+    opacity: 0;  
+    transform: translateY(100px); 
+    animation: slideUp 2s ease-out forwards; 
+    border-radius: 20px;
+  
+  }
+}
 /* Keyframes for sliding up */
 @keyframes slideUp {
   0% {

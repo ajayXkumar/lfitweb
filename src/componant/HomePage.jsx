@@ -72,27 +72,27 @@ const HomePage = () => {
 
       <div
         style={{
-          fontSize: 300,
+          fontSize: "20vw",
           fontFamily: "KoHo",
           fontWeight: "bold",
           color: "white",
           marginTop: 100,
-          alignSelf:"center",
-          width:"100vw",
-          textAlign:"center"
+          alignSelf: "center",
+          width: "100vw",
+          textAlign: "center",
         }}
       >
         LFIT
       </div>
       <div
         style={{
-          fontSize: 26,
+          fontSize: "2vw",
           fontFamily: "KoHo",
           fontWeight: "500",
           color: "white",
-          marginTop: -40,
-          width:"100vw",
-          textAlign:"center"
+          marginTop: "0.5vh",
+          width: "100vw",
+          textAlign: "center",
         }}
       >
         Power Up Your Fitness. Level Up Your Gym.
@@ -100,15 +100,15 @@ const HomePage = () => {
 
       <div
         style={{
-          fontSize: 14,
+          fontSize: "1vw",
           fontFamily: "KoHo",
           color: "white",
           width: 600,
           alignSelf: "center",
           justifySelf: "center",
-          width:"100vw",
-          textAlign:"center",
-          marginTop: 10,
+          width: "100vw",
+          textAlign: "center",
+          marginTop: "1vh",
         }}
       >
         Whether you're training hard or managing a gym, we’ve got the perfect
@@ -145,9 +145,8 @@ const HomePage = () => {
             <div
               style={{
                 display: "flex",
-                width: 120,
+                padding: "10px",
                 backgroundColor: "#e3085c",
-                height: 40,
                 borderRadius: 6,
                 color: "white",
                 marginTop: 40,
@@ -158,7 +157,7 @@ const HomePage = () => {
               }}
             >
               <Link
-                to="/fitness" 
+                to="/fitness"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 Learn more
@@ -206,19 +205,47 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       <div
         style={{
-          height: "600px",
-          position: "relative",
-          marginTop: 600,
           display: "flex",
-          justifyContent: "center",
+          alignContent: "center",
           alignItems: "center",
+          justifyContent: "center",
+          width: "100vw",
+          flexDirection: "column",
+          marginTop: "100px",
         }}
-      ></div>
-      <div style={{ height: "600px" }}></div>
-  <SplashCursor/>
+      >
+        <div
+          style={{
+            width: "50vw",
+            color: "white",
+            alignSelf: "center",
+            textAlign: "center",
+            fontFamily: "koHo",
+          }}
+        >
+          About
+        </div>
+        <div
+          style={{
+            marginTop: "30px",
+            height: "300px",
+            width: "50vw",
+            color: "white",
+            alignSelf: "center",
+            textAlign: "justify",
+            fontFamily: "koHo",
+            
+          }}
+        >
+          At lfit, we believe fitness should be simple, powerful, and accessible
+          to everyone. Whether you're an individual pushing your limits in the
+          gym or a gym owner managing your business, our apps are designed to
+          make your journey easier.
+        </div>
+      </div>
+
       {/* <div className="banner">
         <div className="slider" style={{ "--quantity": 10 }}>
           <div className="item" style={{ "--position": 1 }}>

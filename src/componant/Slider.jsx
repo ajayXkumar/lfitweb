@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DecryptedText from "./Dtext";
+import './../css/SSLider.css'
 const carouselData = [
   {
     image: "/images/workout.jpg",
@@ -63,7 +64,7 @@ const Carousel = () => {
   };
 
   return (
-    <div style={{ width: "60%", margin: "auto", marginTop: 200 }}>
+    <div style={{ width: "60vw", margin: "auto", marginTop: 200 }}>
       <Slider {...settings}>
         {carouselData.map((item, index) => (
           <div key={index}>
@@ -76,23 +77,17 @@ const Carousel = () => {
                 padding: 30,
               }}
             >
-              <div style={{ width: 500, height: 600 }}>
+              <div style={{ width: "30vw" }}>
                 <img
                   src={item.image}
                   alt={item.title}
-                  style={{
-                    height: "500px",
-                    objectFit: "cover",
-                    borderRadius: "20px",
-                    borderColor: "gray",
-                    borderStyle: "solid",
-                  }}
+                  className="slider-image"
                 />
               </div>
 
-              <div style={{ width: 900, height: 500, alignContent: "center" }}>
-                <div style={{ width: "80%", paddingLeft: "80px" }}>
-                  <h2 style={{ marginBottom: "10px" }}>
+              <div className="text-cont">
+                <div style={{ width: "80%",paddingLeft:"10vw"}}>
+                  <h2 style={{ marginBottom: "10px",fontSize:"2vw" }}>
                     <DecryptedText
                       text={item.title}
                       animateOn="view"
@@ -100,6 +95,7 @@ const Carousel = () => {
                     />
                   </h2>
                   <p
+                  className="para"
                     style={{
                       fontSize: "16px",
                       lineHeight: "1.5",

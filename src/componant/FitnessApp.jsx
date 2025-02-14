@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "./Slider";
 import SplashCursor from "./SplashCursor";
+import './../css/FitnessApp.css'
 const FitnessApp = () => {
   return (
     <div
@@ -13,6 +14,7 @@ const FitnessApp = () => {
         flexWrap: "wrap",
       }}
     >
+
       <div
         style={{
           width: "60vw",
@@ -29,34 +31,26 @@ const FitnessApp = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            marginTop:"10vh"
           }}
         >
-          <div style={{ fontSize: 40, fontWeight: "bold", fontFamily: "koHo" }}>
+              
+          <div style={{ fontSize:"4vw", fontWeight: "bold", fontFamily: "koHo" }}>
             LFIT FITNESS TRACKER
           </div>
-          <div style={{ fontSize: 19, fontWeight: "400", fontFamily: "koHo" }}>
+          <div style={{ fontSize: "1vw", fontWeight: "400", fontFamily: "koHo" }}>
             Our Fitness Tracker App helps you track every workout, monitor
             progress, and stay motivated with personalized insights. No more
             guessing—just results.
           </div>
 
           <div
-            style={{
-              display: "flex",
-              width: 120,
-              backgroundColor: "#e3085c",
-              height: 40,
-              borderRadius: 6,
-              color: "white",
-              marginTop: 40,
-              textAlign: "center",
-              alignItems: "center",
-              justifyContent: "center",
-              fontWeight: "600",
-            }}
+
+          className="button-style"
+           
           >
             <a href="/lfit.apk" download="lfit.apk"
-            style={{textDecoration:"none",color:"white"}}>
+            style={{textDecoration:"none",color:"white",fontSize:"1vw"}}>
              
          
             Download
@@ -72,14 +66,7 @@ const FitnessApp = () => {
           }}
         >
           <img
-            style={{
-              borderColor: "gray",
-              borderWidth: "4px",
-              borderStyle: "solid",
-              marginLeft: 200,
-              width: 300,
-              borderRadius: 30,
-            }}
+            className="fitness-image"
             src="/images/home.jpg"
             alt="phone"
           />
@@ -88,7 +75,7 @@ const FitnessApp = () => {
       <div style={{ width: "100vw", marginBottom: 200 }}>
         <Slider />
       </div>
-      <SplashCursor/>
+   
     </div>
   );
 };
