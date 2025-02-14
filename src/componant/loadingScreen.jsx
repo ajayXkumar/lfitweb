@@ -13,7 +13,7 @@ export default function LoadingScreen({ onFinish }) {
     const timeout = setTimeout(() => {
       clearInterval(interval);
       onFinish(); // Callback to navigate to the main page
-    }, 5000);
+    }, 10);
 
     return () => {
       clearInterval(interval);

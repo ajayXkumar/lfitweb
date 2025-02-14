@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scrollbar-width: none;
-  background-color: black;
+
   /* cursor: url('./../public/images/dumbbell.png'), auto; */
 }
 body::-webkit-scrollbar {

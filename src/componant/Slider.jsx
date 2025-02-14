@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DecryptedText from "./Dtext";
-import './../css/SSLider.css'
+import "./../css/SSLider.css";
 const carouselData = [
   {
     image: "/images/workout.jpg",
@@ -57,8 +57,8 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -73,11 +73,14 @@ const Carousel = () => {
             <div
               style={{
                 display: "flex",
-                justifyContent: "space-around",
+                justifyContent: "center",
                 padding: 30,
+                flexDirection:"column",
+                alignItems:"center"
+
               }}
             >
-              <div style={{ width: "30vw" }}>
+              <div style={{ width: "100vw" }}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -86,16 +89,14 @@ const Carousel = () => {
               </div>
 
               <div className="text-cont">
-                <div style={{ width: "80%",paddingLeft:"10vw"}}>
-                  <h2 style={{ marginBottom: "10px",fontSize:"2vw" }}>
-                    <DecryptedText
-                      text={item.title}
-                      animateOn="view"
-                      revealDirection="left"
-                    />
-                  </h2>
-                  <p
-                  className="para"
+                <div className="details-d" style={{ width: "100%",justifyContent:"center",alignItems:"center"}}>
+                  <p  className="details" style={{ marginBottom: "10px",textAlign:"center"}}>
+                    
+                      {item.title}
+                      
+                  </p>
+                  {/* <p
+                    className="para"
                     style={{
                       fontSize: "16px",
                       lineHeight: "1.5",
@@ -108,7 +109,7 @@ const Carousel = () => {
                       animateOn="view"
                       revealDirection="center"
                     />
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

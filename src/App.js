@@ -5,7 +5,7 @@ import HomePage from "./componant/HomePage";
 import LoadingScreen from "./componant/loadingScreen";
 import FitnessApp from './componant/FitnessApp'
 import SplashCursor from "./componant/SplashCursor";
-
+import Home from "./componant/Home";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -17,7 +17,7 @@ function App() {
           <LoadingScreen onFinish={() => setLoading(false)} />
         ) : (
           <Routes>
-            <Route path="/" element={<HomePage />} /> {/* Default Home Page */}
+            <Route path="/" element={<Home />} /> {/* Default Home Page */}
             <Route path="/fitness" element={<FitnessApp />} /> {/* New Fitness Page */}
           </Routes>
         )}
